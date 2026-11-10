@@ -141,9 +141,9 @@ Model coefficients are analyzed to understand how individual features influence 
 
 Odds Ratios are calculated using:
 
-\[
+$$
 OR_j = e^{w_j}
-\]
+$$
 
 This provides an interpretable way to examine how feature values affect the odds of a website being classified as phishing.
 
