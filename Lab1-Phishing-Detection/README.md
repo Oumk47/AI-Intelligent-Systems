@@ -105,12 +105,13 @@ Five Logistic Regression configurations are implemented to study the impact of r
 
 The experiments compare different configurations, including:
 
-Model	 Configuration
-M1	Unregularized Logistic Regression
-M2	L2 Regularization — C = 0.001
-M3	Standard L2 Regularization — C = 1.0
-M4	L1 Regularization — C = 0.01
-M5	Class-weighted Logistic Regression
+| **Model** | **Configuration** |
+|---|---|
+| M1 | Unregularized Logistic Regression |
+| M2 | L2 Regularization — C = 0.001 |
+| M3 | Standard L2 Regularization — C = 1.0 |
+| M4 | L1 Regularization — C = 0.01 |
+| M5 | Class-weighted Logistic Regression |
 
 ### Model Evaluation
 
@@ -124,12 +125,13 @@ The models are evaluated using:
 - False Positive and False Negative counts
 
 
-Model	Precision	Recall (TPR)	F1-Score	PR-AUC	False Positives (FP)	False Negatives (FN)	Zeroed Weights
-0	M1 - Unregularized	0.9996	0.9990	0.9993	1.0	11	25	0
-1	M2 - Strong L2	0.9985	0.9958	0.9971	1.0	39	105	0
-2	M3 - Standard L2	0.9996	0.9989	0.9992	1.0	10	28	0
-3	M4 - Sparse L1	0.9993	0.9971	0.9982	1.0	18	72	24
-4	M5 - SOC Weighted	0.9995	0.9990	0.9992	1.0	13	25	0
+| **Model** | **Precision** | **Recall (TPR)** | **F1-Score** | **PR-AUC** | **False Positives (FP)** | **False Negatives (FN)** | **Zeroed Weights** |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| M1 - Unregularized | 0.9996 | 0.9990 | 0.9993 | 1.0 | 11 | 25 | 0 |
+| M2 - Strong L2 | 0.9985 | 0.9958 | 0.9971 | 1.0 | 39 | 105 | 0 |
+| M3 - Standard L2 | 0.9996 | 0.9989 | 0.9992 | 1.0 | 10 | 28 | 0 |
+| M4 - Sparse L1 | 0.9993 | 0.9971 | 0.9982 | 1.0 | 18 | 72 | 24 |
+| M5 - SOC Weighted | 0.9995 | 0.9990 | 0.9992 | 1.0 | 13 | 25 | 0 |
 
 The comparison helps identify the most suitable configuration for phishing detection while considering the cost of false alarms and missed threats.
 
@@ -191,10 +193,11 @@ Different probability thresholds are evaluated to study the trade-off between ph
 
 The selected thresholds are:
 
-Threshold	TP	TN	FP	FN	Precision	Recall	F1-Score
-0	0.20	25221	33682	31	15	0.9988	0.9994	0.9991
-1	0.50	25208	33703	10	28	0.9996	0.9989	0.9992
-2	0.85	25172	33713	0	64	1.0000	0.9975	0.9987
+| **Threshold** | **TP** | **TN** | **FP** | **FN** | **Precision** | **Recall** | **F1-Score** |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0.20 | 25221 | 33682 | 31 | 15 | 0.9988 | 0.9994 | 0.9991 |
+| 0.50 | 25208 | 33703 | 10 | 28 | 0.9996 | 0.9989 | 0.9992 |
+| 0.85 | 25172 | 33713 | 0 | 64 | 1.0000 | 0.9975 | 0.9987 |
 
 
 The analysis considers:
